@@ -9,7 +9,7 @@ const DoctorsList = () => {
             <Sidebar />
             <div className="DoctorslistContainer">
                 <Navbar />
-                <DataTable user="doctor" />
+                <DataTable user="doctors" />
             </div>
         </div>
     );

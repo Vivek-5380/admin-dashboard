@@ -10,7 +10,7 @@ const HostpitalsList = () => {
             <Sidebar />
             <div className="HospitalslistContainer">
                 <Navbar />
-                <DataTable user="hospital" />
+                <DataTable user="hospitals" />
             </div>
         </div>
     );

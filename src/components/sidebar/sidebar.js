@@ -10,35 +10,46 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import {Link} from "react-router-dom";
 
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="top">
-                <span className="logo">Admin</span>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                    <span className="logo">Admin</span>
+                </Link>
             </div>
             <hr />
             <div className="center">
                 <ul>
                     <p className="title">MAIN</p>
-                    <li>
-                        <DashboardIcon className="icon" />
-                        <span>Dashboard</span>
-                    </li>
+                    <Link to="/" style={{ textDecoration: "none" }}>
+                        <li>
+                            <DashboardIcon className="icon" />
+                            <span>Dashboard</span>
+                        </li>
+                    </Link>
                     <p className="title">LISTS</p>
-                    <li>
-                        <PersonOutlineIcon className="icon" />
-                        <span>Patients</span>
-                    </li>
-                    <li>
-                        <AdminPanelSettingsOutlinedIcon className="icon" />
-                        <span>Doctors</span>
-                    </li>
-                    <li>
-                        <MedicalServicesIcon className="icon" />
-                        <span>Hospitals</span>
-                    </li>
+                    <Link to="/patients" style={{ textDecoration: "none" }}>
+                        <li>
+                            <PersonOutlineIcon className="icon" />
+                            <span>Patients</span>
+                        </li>
+                    </Link>
+                    <Link to="/doctors" style={{ textDecoration: "none" }}>
+                        <li>
+                            <AdminPanelSettingsOutlinedIcon className="icon" />
+                            <span>Doctors</span>
+                        </li>
+                    </Link>
+                    <Link to="/hospitals" style={{ textDecoration: "none" }}>
+                        <li>
+                            <MedicalServicesIcon className="icon" />
+                            <span>Hospitals</span>
+                        </li>
+                    </Link>
                     <p className="title">USEFUL</p>
                     <li>
                         <InsertChartIcon className="icon" />

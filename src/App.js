@@ -1,5 +1,4 @@
 import Home from "./pages/home/home";
-import Login from "./pages/login/login";
 
 import PatientsList from "./pages/patients-list/patientsList";
 import Patients from "./pages/patients/patients";
@@ -19,7 +18,6 @@ function App() {
           <Routes>
             <Route path="/">
               <Route index element={<Home />} />
-              <Route index element={<Login />} />
 
               <Route path="patients">
                 <Route index element={<PatientsList />} />

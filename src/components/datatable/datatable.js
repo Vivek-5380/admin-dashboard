@@ -13,15 +13,15 @@ import { Link } from "react-router-dom";
 
 const DataTable = (props) => {
     let userRow , userColumns;
-    if(props.user === 'patient'){
+    if(props.user === 'patients'){
         userRow = userRowsPatients;
         userColumns = userColumnsPatients;
     }
-    else if (props.user === 'doctor'){
+    else if (props.user === 'doctors'){
         userRow = userRowsDoctors;
         userColumns = userColumnsDoctors;
     }
-    else if(props.user === 'hospital') {
+    else if(props.user === 'hospitals') {
         userRow = userRowsHospitals;
         userColumns = userColumnsHospitals;
     }
