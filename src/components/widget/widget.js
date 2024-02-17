@@ -3,7 +3,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AdminPanelSettingsOutlinedIcon from '@mui/icons-material/AdminPanelSettingsOutlined';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
-// import StickyNote2OutlinedIcon from '@mui/icons-material/StickyNote2Outlined';
+import { Link } from "react-router-dom";
 
 const Widget = ({ type }) => {
     let data;
@@ -67,7 +67,11 @@ const Widget = ({ type }) => {
             <div className="left">
                 <span className="title">{data.title}</span>
                 <span className="counter">{data.isAppointment && "#"} {amount}</span>
-                <span className="link">{data.link}</span>
+                <span className="link">
+                    <Link to={`/${type}`} style={{ textDecoration: "none" }}>
+                        {data.link}
+                    </Link>
+                </span>
             </div>
             <div className="right">
                 <div className="percentage positive">
