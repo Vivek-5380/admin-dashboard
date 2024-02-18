@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Widget = ({ type }) => {
     let data;
-
+    //fetch from api (http://localhost:5050/admin/count)
     //temporary
     const amount = 100;
     const diff = 20;

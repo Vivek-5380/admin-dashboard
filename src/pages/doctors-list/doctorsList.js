@@ -8,7 +8,7 @@ const DoctorsList = () => {
         <div className="doctors-list">
             <Sidebar />
             <div className="DoctorslistContainer">
-                <Navbar />
+                <Navbar title="Doctor's List" />
                 <DataTable user="doctors" />
             </div>
         </div>

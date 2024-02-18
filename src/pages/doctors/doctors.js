@@ -9,7 +9,7 @@ const Doctors = () => {
         <div className="doctors">
             <Sidebar />
             <div className="doctorsContainer">
-                <Navbar />
+                <Navbar title = "Vivek's Information" />
                 <div className="top">
                     <div className="left">
                         <h1 className="title">Doctors Information</h1>

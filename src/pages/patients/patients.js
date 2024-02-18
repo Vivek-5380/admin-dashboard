@@ -9,7 +9,7 @@ const Patients = () => {
         <div className="patients">
             <Sidebar />
             <div className="patientsContainer">
-                <Navbar />
+                <Navbar title="Vivek's List" />
                 <div className="top">
                     <div className="left">
                         <h1 className="title">Patients Information</h1>

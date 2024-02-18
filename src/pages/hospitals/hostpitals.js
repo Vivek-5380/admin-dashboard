@@ -9,7 +9,7 @@ const Hostpitals = () => {
         <div className="hostpitals">
             <Sidebar />
             <div className="hostpitalsContainer">
-                <Navbar />
+                <Navbar title="XYZ's Information" />
                 <div className="top">
                     <div className="left">
                         <h1 className="title">Hostpitals Information</h1>

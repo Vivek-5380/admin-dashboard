@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home">
             <Sidebar />
             <div className="homeContainer">
-                <Navbar />
+                <Navbar title="Dashboard" />
                 <div className="widgets">
                     <Widget type="patients"/>
                     <Widget type="doctors"/>
